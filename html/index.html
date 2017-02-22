@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+  <title>http request?</title>
+</head>
+
+<body>
+  <div ng-controller="mycon as $ctrl">
+    <input type="button" ng-click="$ctrl.send();" value="/api">
+    <input type="button" ng-click="$ctrl.sendFast();" value="/api(fast)">
+    <input type="button" ng-click="$ctrl.sendAnother();" value="/another">
+    <input type="button" ng-click="$ctrl.fetch();" value="/fetch">
+    <pre ng-bind="$ctrl.result"></pre>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
